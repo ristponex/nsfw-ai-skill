@@ -57,7 +57,7 @@ IF premium quality → use "kling-video/v3/pro/text-to-video" (from $0.204/s)
   - Top-tier video quality
   - Up to 1080p, 10 sec
 
-IF premium motion → use "seedance/v1.5/pro" (from $0.222/s)
+IF premium motion → use "seedance/v1.5/pro" (from $0.044/s)
   - Excellent natural movement
   - Up to 1080p, 5 sec
 

@@ -85,7 +85,7 @@ Most AI platforms block NSFW content outright. The few that allow it charge prem
 | Wan 2.2 Spicy LoRA | Video | from $0.03/s | Custom LoRA variants | Styled NSFW video |
 | Wan 2.5 | Video | from $0.05/s | Uncensored mode | Mid-range video |
 | Wan 2.6 | Video | from $0.07/s | Uncensored mode | High-quality video |
-| Seedance v1.5 Pro | Video | from $0.222/s | Whitelisted on Atlas Cloud | Premium video |
+| Seedance v1.5 Pro | Video | from $0.044/s | Whitelisted on Atlas Cloud | Premium video |
 | Kling v3.0 Pro | Video | from $0.204/s | Whitelisted on Atlas Cloud | Top-tier video |
 | Vidu Q3-Pro | Video | from $0.06/s | Whitelisted on Atlas Cloud | Quality + value |
 | Vidu Q3-Turbo | Video | from $0.034/s | Whitelisted on Atlas Cloud | Fast + cheap |
@@ -121,7 +121,7 @@ Text/Stories     → DeepSeek V3.2 ($0.26/M input tokens)
 | Wan 2.2 Spicy LoRA | N/A (not available) | from $0.03/s | **Atlas Exclusive** |
 | Wan 2.5 (5sec) | $0.25/req | from $0.05/s | **80% cheaper** |
 | Wan 2.6 (5sec) | $0.35/req | from $0.07/s | **80% cheaper** |
-| Seedance v1.5 Pro | N/A (not available) | from $0.222/s | **Atlas Exclusive** |
+| Seedance v1.5 Pro | N/A (not available) | from $0.044/s | **Atlas Exclusive** |
 | Kling v3.0 (5sec) | $1.12/req | from $0.204/s | **82% cheaper** |
 | Vidu Q3-Pro | N/A (not available) | from $0.06/s | **Atlas Exclusive** |
 | Vidu Q3-Turbo | N/A (not available) | from $0.034/s | **Atlas Exclusive** |
@@ -396,7 +396,7 @@ def generate_video_kling(prompt, image_url=None, duration=5):
     return poll_for_result(f"kling-video/v3/pro/text-to-video", request_id)
 ```
 
-#### Seedance v1.5 Pro — Premium Video (from $0.222/s)
+#### Seedance v1.5 Pro — Premium Video (from $0.044/s)
 
 ```python
 def generate_video_seedance(prompt, image_url=None):
@@ -863,7 +863,7 @@ Once the skill is installed, just tell Claude what you want in plain English:
 - **Best for**: Mid-range quality needs
 
 #### Seedance v1.5 Pro
-- **Price**: from $0.222/s
+- **Price**: from $0.044/s
 - **Method**: Whitelisted on Atlas Cloud for NSFW
 - **Resolution**: Up to 1080p
 - **Duration**: Up to 5 seconds
@@ -1095,7 +1095,7 @@ TIER 2 — Mid-Range ($0.05-0.07)
 
 TIER 3 — Premium ($0.20+)
 ├── Kling v3.0 Pro Video:  from $0.204/s  ← Best quality
-└── Seedance v1.5 Pro:     from $0.222/s  ← Best motion
+└── Seedance v1.5 Pro:     from $0.044/s  ← Best motion
 ```
 
 ### Budget Calculator
