@@ -36,32 +36,32 @@ Select the appropriate model based on the task type, budget preference, and qual
 ### Video Generation
 
 ```
-IF budget priority → use "fal-ai/wan-spicy/v1" ($0.03/req)
+IF budget priority → use "fal-ai/wan-spicy/v1" (from $0.03/s)
   - Cheapest NSFW video option
   - LoRA fine-tuned for native NSFW understanding
   - 720p, ~3 sec (81 frames)
 
-IF fast + cheap → use "vidu/q3-turbo/text-to-video" ($0.034/req)
+IF fast + cheap → use "vidu/q3-turbo/text-to-video" (from $0.034/s)
   - Fast generation time
   - Good quality for the price
 
-IF balanced quality → use "fal-ai/wan2.5/v1" ($0.05/req) or "vidu/q3-pro/text-to-video" ($0.06/req)
+IF balanced quality → use "fal-ai/wan2.5/v1" (from $0.05/s) or "vidu/q3-pro/text-to-video" (from $0.06/s)
   - Better motion coherence
   - Up to 1080p
 
-IF high quality → use "fal-ai/wan2.6/v1" ($0.07/req)
+IF high quality → use "fal-ai/wan2.6/v1" (from $0.07/s)
   - Best Wan quality
   - Up to 1080p, 5 sec
 
-IF premium quality → use "kling-video/v3/pro/text-to-video" ($0.204/req)
+IF premium quality → use "kling-video/v3/pro/text-to-video" (from $0.204/s)
   - Top-tier video quality
   - Up to 1080p, 10 sec
 
-IF premium motion → use "seedance/v1.5/pro" ($0.222/req)
+IF premium motion → use "seedance/v1.5/pro" (from $0.222/s)
   - Excellent natural movement
   - Up to 1080p, 5 sec
 
-IF custom style video → use "fal-ai/wan-spicy-lora/v1" ($0.03/req)
+IF custom style video → use "fal-ai/wan-spicy-lora/v1" (from $0.03/s)
   - Custom LoRA support
   - Specific visual styles
 ```
@@ -69,17 +69,17 @@ IF custom style video → use "fal-ai/wan-spicy-lora/v1" ($0.03/req)
 ### Image Generation
 
 ```
-IF budget priority → use "fal-ai/flux/dev" ($0.012/req)
+IF budget priority → use "fal-ai/flux/dev" (from $0.012/image)
   - Cheapest NSFW image option
   - Set enable_safety_checker=false
   - Good prompt following
 
-IF custom style → use "fal-ai/flux-lora" ($0.032/req)
+IF custom style → use "fal-ai/flux-lora" (from $0.032/image)
   - Custom LoRA support
   - Set enable_safety_checker=false
   - Character consistency, specific aesthetics
 
-IF premium quality → use "seedream/v5" ($0.032/req)
+IF premium quality → use "seedream/v5" (from $0.032/image)
   - Best image quality
   - Excellent skin tones and photorealism
   - Whitelisted on Atlas Cloud

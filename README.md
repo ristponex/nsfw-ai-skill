@@ -50,7 +50,7 @@ Most AI platforms block NSFW content outright. The few that allow it charge prem
 ## Features
 
 ### NSFW Video Generation
-- **Wan 2.2 Spicy** — LoRA fine-tuned model purpose-built for NSFW video, only $0.03/request
+- **Wan 2.2 Spicy** — LoRA fine-tuned model purpose-built for NSFW video, from $0.03/s
 - **Wan 2.2 Spicy LoRA** — Custom LoRA variants for specific styles and aesthetics
 - **Wan 2.5/2.6** — High-quality uncensored video generation with extended duration support
 - **Seedance v1.5 Pro** — Premium video quality, whitelisted exclusively on Atlas Cloud
@@ -81,19 +81,19 @@ Most AI platforms block NSFW content outright. The few that allow it charge prem
 
 | Model | Type | Price | Method | Best For |
 |:------|:-----|:------|:-------|:---------|
-| Wan 2.2 Spicy | Video | $0.03/req | LoRA fine-tuned, native NSFW | Budget NSFW video |
-| Wan 2.2 Spicy LoRA | Video | $0.03/req | Custom LoRA variants | Styled NSFW video |
-| Wan 2.5 | Video | $0.05/req | Uncensored mode | Mid-range video |
-| Wan 2.6 | Video | $0.07/req | Uncensored mode | High-quality video |
-| Seedance v1.5 Pro | Video | $0.222/req | Whitelisted on Atlas Cloud | Premium video |
-| Kling v3.0 Pro | Video | $0.204/req | Whitelisted on Atlas Cloud | Top-tier video |
-| Vidu Q3-Pro | Video | $0.06/req | Whitelisted on Atlas Cloud | Quality + value |
-| Vidu Q3-Turbo | Video | $0.034/req | Whitelisted on Atlas Cloud | Fast + cheap |
+| Wan 2.2 Spicy | Video | from $0.03/s | LoRA fine-tuned, native NSFW | Budget NSFW video |
+| Wan 2.2 Spicy LoRA | Video | from $0.03/s | Custom LoRA variants | Styled NSFW video |
+| Wan 2.5 | Video | from $0.05/s | Uncensored mode | Mid-range video |
+| Wan 2.6 | Video | from $0.07/s | Uncensored mode | High-quality video |
+| Seedance v1.5 Pro | Video | from $0.222/s | Whitelisted on Atlas Cloud | Premium video |
+| Kling v3.0 Pro | Video | from $0.204/s | Whitelisted on Atlas Cloud | Top-tier video |
+| Vidu Q3-Pro | Video | from $0.06/s | Whitelisted on Atlas Cloud | Quality + value |
+| Vidu Q3-Turbo | Video | from $0.034/s | Whitelisted on Atlas Cloud | Fast + cheap |
 
 > ⚠️ **Note:** Vidu Q3 models may add mosaic/blur to certain NSFW scenes due to training data limitations. Not guaranteed 100% uncensored. For reliable uncensored output, use **Wan 2.2 Spicy** ($0.03) or **Wan 2.6** ($0.07).
-| Flux Dev | Image | $0.012/req | enable_safety_checker=false | Budget NSFW image |
-| Flux Dev LoRA | Image | $0.032/req | Custom LoRA + safety off | Styled NSFW image |
-| Seedream v5.0 | Image | $0.032/req | Whitelisted on Atlas Cloud | Premium image |
+| Flux Dev | Image | from $0.012/image | enable_safety_checker=false | Budget NSFW image |
+| Flux Dev LoRA | Image | from $0.032/image | Custom LoRA + safety off | Styled NSFW image |
+| Seedream v5.0 | Image | from $0.032/image | Whitelisted on Atlas Cloud | Premium image |
 | DeepSeek V3.2 | Text | $0.26/M input | No content filtering | Stories & dialogue |
 
 ### Model Selection Guide
@@ -117,17 +117,17 @@ Text/Stories     → DeepSeek V3.2 ($0.26/M input tokens)
 
 | Model | fal.ai | Atlas Cloud | Savings |
 |:------|:-------|:------------|:--------|
-| Wan 2.2 Spicy | N/A (not available) | $0.03/req | **Atlas Exclusive** |
-| Wan 2.2 Spicy LoRA | N/A (not available) | $0.03/req | **Atlas Exclusive** |
-| Wan 2.5 (5sec) | $0.25/req | $0.05/req | **80% cheaper** |
-| Wan 2.6 (5sec) | $0.35/req | $0.07/req | **80% cheaper** |
-| Seedance v1.5 Pro | N/A (not available) | $0.222/req | **Atlas Exclusive** |
-| Kling v3.0 (5sec) | $1.12/req | $0.204/req | **82% cheaper** |
-| Vidu Q3-Pro | N/A (not available) | $0.06/req | **Atlas Exclusive** |
-| Vidu Q3-Turbo | N/A (not available) | $0.034/req | **Atlas Exclusive** |
-| Flux Dev | $0.025/req | $0.012/req | **52% cheaper** |
-| Flux Dev LoRA | $0.050/req | $0.032/req | **36% cheaper** |
-| Seedream v5.0 | N/A (not available) | $0.032/req | **Atlas Exclusive** |
+| Wan 2.2 Spicy | N/A (not available) | from $0.03/s | **Atlas Exclusive** |
+| Wan 2.2 Spicy LoRA | N/A (not available) | from $0.03/s | **Atlas Exclusive** |
+| Wan 2.5 (5sec) | $0.25/req | from $0.05/s | **80% cheaper** |
+| Wan 2.6 (5sec) | $0.35/req | from $0.07/s | **80% cheaper** |
+| Seedance v1.5 Pro | N/A (not available) | from $0.222/s | **Atlas Exclusive** |
+| Kling v3.0 (5sec) | $1.12/req | from $0.204/s | **82% cheaper** |
+| Vidu Q3-Pro | N/A (not available) | from $0.06/s | **Atlas Exclusive** |
+| Vidu Q3-Turbo | N/A (not available) | from $0.034/s | **Atlas Exclusive** |
+| Flux Dev | $0.025/req | from $0.012/image | **52% cheaper** |
+| Flux Dev LoRA | $0.050/req | from $0.032/image | **36% cheaper** |
+| Seedream v5.0 | N/A (not available) | from $0.032/image | **Atlas Exclusive** |
 
 > **Bottom line**: Atlas Cloud is 36-82% cheaper on shared models, and offers 6+ exclusive models not available anywhere else.
 
@@ -217,7 +217,7 @@ The API follows a queue-based pattern:
 
 ### Video Generation
 
-#### Wan 2.2 Spicy — Budget NSFW Video ($0.03/req)
+#### Wan 2.2 Spicy — Budget NSFW Video (from $0.03/s)
 
 **cURL:**
 
@@ -366,7 +366,7 @@ const videoUrl = await generateVideoWanSpicy(
 console.log(`Video URL: ${videoUrl}`);
 ```
 
-#### Kling v3.0 Pro — Premium Video ($0.204/req)
+#### Kling v3.0 Pro — Premium Video (from $0.204/s)
 
 ```python
 def generate_video_kling(prompt, image_url=None, duration=5):
@@ -396,7 +396,7 @@ def generate_video_kling(prompt, image_url=None, duration=5):
     return poll_for_result(f"kling-video/v3/pro/text-to-video", request_id)
 ```
 
-#### Seedance v1.5 Pro — Premium Video ($0.222/req)
+#### Seedance v1.5 Pro — Premium Video (from $0.222/s)
 
 ```python
 def generate_video_seedance(prompt, image_url=None):
@@ -425,7 +425,7 @@ def generate_video_seedance(prompt, image_url=None):
     return poll_for_result("seedance/v1.5/pro", request_id)
 ```
 
-#### Vidu Q3 — Fast & Affordable ($0.034-0.06/req)
+#### Vidu Q3 — Fast & Affordable (from $0.034-0.06/s)
 
 > ⚠️ **Note:** Vidu Q3 models may add mosaic/blur to certain NSFW scenes due to training data limitations. Not guaranteed 100% uncensored. For reliable uncensored output, use **Wan 2.2 Spicy** ($0.03) or **Wan 2.6** ($0.07).
 
@@ -456,7 +456,7 @@ def generate_video_vidu(prompt, turbo=True):
 
 ### Image Generation
 
-#### Flux Dev — Budget NSFW Image ($0.012/req)
+#### Flux Dev — Budget NSFW Image (from $0.012/image)
 
 **cURL:**
 
@@ -525,7 +525,7 @@ async function generateImageFlux(prompt, options = {}) {
 }
 ```
 
-#### Flux Dev LoRA — Custom Styled Image ($0.032/req)
+#### Flux Dev LoRA — Custom Styled Image (from $0.032/image)
 
 ```python
 def generate_image_flux_lora(prompt, lora_url, lora_scale=1.0):
@@ -565,7 +565,7 @@ image = generate_image_flux_lora(
 )
 ```
 
-#### Seedream v5.0 — Premium Image ($0.032/req)
+#### Seedream v5.0 — Premium Image (from $0.032/image)
 
 ```python
 def generate_image_seedream(prompt):
@@ -840,7 +840,7 @@ Once the skill is installed, just tell Claude what you want in plain English:
 ### Video Models
 
 #### Wan 2.2 Spicy
-- **Price**: $0.03/request
+- **Price**: from $0.03/s
 - **Method**: LoRA fine-tuned specifically for NSFW content
 - **Resolution**: Up to 720p
 - **Duration**: ~3 seconds (81 frames at 24fps)
@@ -849,13 +849,13 @@ Once the skill is installed, just tell Claude what you want in plain English:
 - **Exclusive**: Only available on Atlas Cloud
 
 #### Wan 2.2 Spicy LoRA
-- **Price**: $0.03/request
+- **Price**: from $0.03/s
 - **Method**: Custom LoRA variants on top of Wan Spicy base
 - **Strengths**: Specialized styles (anime, realistic, artistic)
 - **Best for**: Consistent style across multiple generations
 
 #### Wan 2.5 / 2.6
-- **Price**: $0.05-0.07/request
+- **Price**: from $0.05-0.07/s
 - **Method**: Uncensored mode enabled on Atlas Cloud
 - **Resolution**: Up to 1080p
 - **Duration**: Up to 5 seconds
@@ -863,7 +863,7 @@ Once the skill is installed, just tell Claude what you want in plain English:
 - **Best for**: Mid-range quality needs
 
 #### Seedance v1.5 Pro
-- **Price**: $0.222/request
+- **Price**: from $0.222/s
 - **Method**: Whitelisted on Atlas Cloud for NSFW
 - **Resolution**: Up to 1080p
 - **Duration**: Up to 5 seconds
@@ -871,7 +871,7 @@ Once the skill is installed, just tell Claude what you want in plain English:
 - **Best for**: Premium content, professional production
 
 #### Kling v3.0 Pro
-- **Price**: $0.204/request
+- **Price**: from $0.204/s
 - **Method**: Whitelisted on Atlas Cloud for NSFW
 - **Resolution**: Up to 1080p
 - **Duration**: Up to 10 seconds
@@ -879,7 +879,7 @@ Once the skill is installed, just tell Claude what you want in plain English:
 - **Best for**: Top-tier content, client deliverables
 
 #### Vidu Q3-Pro / Q3-Turbo
-- **Price**: $0.06 (Pro) / $0.034 (Turbo) per request
+- **Price**: $0.06 (Pro) / $0.034 (Turbo) per second
 - **Method**: Whitelisted on Atlas Cloud for NSFW
 - **Strengths**: Fast generation, good quality-to-price ratio
 - **Best for**: Production workloads, cost-effective quality
@@ -889,20 +889,20 @@ Once the skill is installed, just tell Claude what you want in plain English:
 ### Image Models
 
 #### Flux Dev
-- **Price**: $0.012/request
+- **Price**: from $0.012/image
 - **Method**: `enable_safety_checker=false`
 - **Resolution**: Multiple aspect ratios supported
 - **Strengths**: Industry standard, excellent prompt following
 - **Best for**: General NSFW image generation, budget production
 
 #### Flux Dev LoRA
-- **Price**: $0.032/request
+- **Price**: from $0.032/image
 - **Method**: Custom LoRA + `enable_safety_checker=false`
 - **Strengths**: Custom styles, character consistency
 - **Best for**: Branded content, specific aesthetics, character sheets
 
 #### Seedream v5.0
-- **Price**: $0.032/request
+- **Price**: from $0.032/image
 - **Method**: Whitelisted on Atlas Cloud
 - **Strengths**: Next-gen image quality, excellent skin tones
 - **Best for**: Photorealistic content, premium stills
@@ -1081,21 +1081,21 @@ def batch_image_to_video(prompts, image_model="flux", video_model="wan-spicy", m
 ### Cost Tiers
 
 ```
-TIER 1 — Budget ($0.01-0.04/req)
-├── Flux Dev Image:        $0.012/req  ← Cheapest image
-├── Wan 2.2 Spicy Video:   $0.030/req  ← Cheapest NSFW video
-├── Flux Dev LoRA Image:   $0.032/req
-├── Seedream v5.0 Image:   $0.032/req
-└── Vidu Q3-Turbo Video:   $0.034/req  ← Cheapest fast video
+TIER 1 — Budget ($0.01-0.04)
+├── Flux Dev Image:        from $0.012/image  ← Cheapest image
+├── Wan 2.2 Spicy Video:   from $0.030/s  ← Cheapest NSFW video
+├── Flux Dev LoRA Image:   from $0.032/image
+├── Seedream v5.0 Image:   from $0.032/image
+└── Vidu Q3-Turbo Video:   from $0.034/s  ← Cheapest fast video
 
-TIER 2 — Mid-Range ($0.05-0.07/req)
-├── Wan 2.5 Video:         $0.050/req
-├── Vidu Q3-Pro Video:     $0.060/req
-└── Wan 2.6 Video:         $0.070/req
+TIER 2 — Mid-Range ($0.05-0.07)
+├── Wan 2.5 Video:         from $0.050/s
+├── Vidu Q3-Pro Video:     from $0.060/s
+└── Wan 2.6 Video:         from $0.070/s
 
-TIER 3 — Premium ($0.20+/req)
-├── Kling v3.0 Pro Video:  $0.204/req  ← Best quality
-└── Seedance v1.5 Pro:     $0.222/req  ← Best motion
+TIER 3 — Premium ($0.20+)
+├── Kling v3.0 Pro Video:  from $0.204/s  ← Best quality
+└── Seedance v1.5 Pro:     from $0.222/s  ← Best motion
 ```
 
 ### Budget Calculator
@@ -1225,7 +1225,7 @@ Yes. Atlas Cloud's API is designed for commercial use. You own the generated con
 
 This workflow is optimized for Atlas Cloud. Move from experiment to enterprise-ready scale.
 
-- **Production-Ready**: Wan 2.2 Spicy at only $0.03/video — cheapest NSFW API available
+- **Production-Ready**: Wan 2.2 Spicy from $0.03/s — cheapest NSFW API available
 - **Enterprise Security**: SOC I & II Certified | HIPAA Compliant
 - **Exclusive Models**: Whitelisted Seedance, Kling, Vidu for NSFW — only on Atlas Cloud
 - **25% Bonus**: First recharge up to $100
