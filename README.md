@@ -89,6 +89,8 @@ Most AI platforms block NSFW content outright. The few that allow it charge prem
 | Kling v3.0 Pro | Video | $0.204/req | Whitelisted on Atlas Cloud | Top-tier video |
 | Vidu Q3-Pro | Video | $0.06/req | Whitelisted on Atlas Cloud | Quality + value |
 | Vidu Q3-Turbo | Video | $0.034/req | Whitelisted on Atlas Cloud | Fast + cheap |
+
+> ⚠️ **Note:** Vidu Q3 models may add mosaic/blur to certain NSFW scenes due to training data limitations. Not guaranteed 100% uncensored. For reliable uncensored output, use **Wan 2.2 Spicy** ($0.03) or **Wan 2.6** ($0.07).
 | Flux Dev | Image | $0.012/req | enable_safety_checker=false | Budget NSFW image |
 | Flux Dev LoRA | Image | $0.032/req | Custom LoRA + safety off | Styled NSFW image |
 | Seedream v5.0 | Image | $0.032/req | Whitelisted on Atlas Cloud | Premium image |
@@ -98,9 +100,11 @@ Most AI platforms block NSFW content outright. The few that allow it charge prem
 
 ```
 Budget Video     → Wan 2.2 Spicy ($0.03)
-Quality Video    → Wan 2.6 ($0.07) or Vidu Q3-Pro ($0.06)
+Quality Video    → Wan 2.6 ($0.07) or Vidu Q3-Pro ($0.06)*
 Premium Video    → Kling v3.0 Pro ($0.204) or Seedance v1.5 Pro ($0.222)
-Fast Video       → Vidu Q3-Turbo ($0.034)
+Fast Video       → Vidu Q3-Turbo ($0.034)*
+
+* Vidu Q3 may add mosaic/blur to certain NSFW scenes. Use Wan models for reliable uncensored output.
 Budget Image     → Flux Dev ($0.012)
 Styled Image     → Flux Dev LoRA ($0.032)
 Premium Image    → Seedream v5.0 ($0.032)
@@ -422,6 +426,8 @@ def generate_video_seedance(prompt, image_url=None):
 ```
 
 #### Vidu Q3 — Fast & Affordable ($0.034-0.06/req)
+
+> ⚠️ **Note:** Vidu Q3 models may add mosaic/blur to certain NSFW scenes due to training data limitations. Not guaranteed 100% uncensored. For reliable uncensored output, use **Wan 2.2 Spicy** ($0.03) or **Wan 2.6** ($0.07).
 
 ```python
 def generate_video_vidu(prompt, turbo=True):
@@ -877,6 +883,8 @@ Once the skill is installed, just tell Claude what you want in plain English:
 - **Method**: Whitelisted on Atlas Cloud for NSFW
 - **Strengths**: Fast generation, good quality-to-price ratio
 - **Best for**: Production workloads, cost-effective quality
+
+> ⚠️ **Note:** Vidu Q3 models may add mosaic/blur to certain NSFW scenes due to training data limitations. Not guaranteed 100% uncensored. For reliable uncensored output, use **Wan 2.2 Spicy** ($0.03) or **Wan 2.6** ($0.07).
 
 ### Image Models
 
