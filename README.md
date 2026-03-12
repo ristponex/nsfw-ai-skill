@@ -1,8 +1,8 @@
 # NSFW AI Skill — Uncensored AI Content Generation via Atlas Cloud
 
-A **Claude Code skill** for generating uncensored NSFW content — video, image, and text — using [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683)'s whitelisted models. Skip the censorship walls. Get production-ready results at a fraction of the cost.
+An **open agent skill** for generating uncensored NSFW content — video, image, and text — using [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683)'s whitelisted models. Skip the censorship walls. Get production-ready results at a fraction of the cost.
 
-> **What is a Claude Code Skill?** A skill is a reusable instruction set that extends Claude Code's capabilities. Install this skill and Claude will automatically know how to generate NSFW content using the best available models and APIs.
+> **What is an Agent Skill?** A skill is a reusable instruction set that extends AI coding agents' capabilities. Skills work with 15+ platforms including Claude Code, Cursor, OpenAI Codex, GitHub Copilot, Gemini CLI, Windsurf, OpenCode, Kiro, and more. Install this skill and your agent will automatically know how to generate NSFW content using the best available models and APIs.
 
 ---
 
@@ -141,10 +141,10 @@ export ATLAS_API_KEY="your-api-key-here"
 
 ### 2. Install the Skill
 
-Add this repository to your Claude Code skills:
+Add this skill to your agent:
 
 ```
-/skill add https://github.com/thoughtincode/nsfw-ai-skill
+npx skills add https://github.com/thoughtincode/nsfw-ai-skill
 ```
 
 ### 3. Start Generating
@@ -159,14 +159,13 @@ Generate an artistic nude video with soft lighting using Wan Spicy
 
 ## Installation
 
-### As a Claude Code Skill
+### As an Agent Skill
+
+Works with Claude Code, Cursor, OpenAI Codex, GitHub Copilot, Gemini CLI, Windsurf, OpenCode, Kiro, and 15+ AI coding agents.
 
 ```bash
-# Add the skill to Claude Code
-/skill add https://github.com/thoughtincode/nsfw-ai-skill
-
-# Verify installation
-/skill list
+# Add the skill to your agent
+npx skills add https://github.com/thoughtincode/nsfw-ai-skill
 ```
 
 ### Manual Setup
@@ -1249,9 +1248,9 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 - [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683) — API Provider
 - [Atlas Cloud Documentation](https://docs.atlascloud.ai) — Full API Docs
-- [Claude Code](https://claude.ai/code) — AI Coding Assistant
+- [Claude Code](https://claude.ai/code) — AI Coding Agent
 - [Hugging Face](https://huggingface.co) — LoRA Model Hub
 
 ---
 
-*Built for the Atlas Cloud ecosystem. Not affiliated with Anthropic or Claude.*
+*Built for the open agent skills ecosystem — works with Claude Code, Cursor, Codex, Copilot, Gemini CLI, Windsurf, OpenCode, Kiro, and 15+ AI coding agents. Powered by Atlas Cloud.*
