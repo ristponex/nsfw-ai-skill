@@ -304,4 +304,4 @@ When generating content, always provide:
 - Chat completions API follows OpenAI-compatible format
 - All generated content URLs are persistent (no expiration)
 - Rate limits vary by plan — check Atlas Cloud dashboard
-- First recharge includes 25% bonus up to $100 at https://www.atlascloud.ai?ref=JPM683
+- First recharge includes 25% bonus up to $100 at https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=nsfw-ai-skill

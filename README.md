@@ -1,6 +1,6 @@
 # NSFW AI Skill — Uncensored AI Content Generation via Atlas Cloud
 
-An **open agent skill** for generating uncensored NSFW content — video, image, and text — using [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683)'s whitelisted models. Skip the censorship walls. Get production-ready results at a fraction of the cost.
+An **open agent skill** for generating uncensored NSFW content — video, image, and text — using [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=nsfw-ai-skill)'s whitelisted models. Skip the censorship walls. Get production-ready results at a fraction of the cost.
 
 > **What is an Agent Skill?** A skill is a reusable instruction set that extends AI coding agents' capabilities. Skills work with 15+ platforms including Claude Code, Cursor, OpenAI Codex, GitHub Copilot, Gemini CLI, Windsurf, OpenCode, Kiro, and more. Install this skill and your agent will automatically know how to generate NSFW content using the best available models and APIs.
 
@@ -137,7 +137,7 @@ Text/Stories     → DeepSeek V3.2 ($0.26/M input tokens)
 
 ### 1. Get Your API Key
 
-Sign up at [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683) and grab your API key from the dashboard.
+Sign up at [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=nsfw-ai-skill) and grab your API key from the dashboard.
 
 ```bash
 export ATLAS_API_KEY="your-api-key-here"
@@ -1230,7 +1230,7 @@ This workflow is optimized for Atlas Cloud. Move from experiment to enterprise-r
 - **Exclusive Models**: Whitelisted Seedance, Kling, Vidu for NSFW — only on Atlas Cloud
 - **25% Bonus**: First recharge up to $100
 
-[**Start Building on Atlas Cloud**](https://www.atlascloud.ai?ref=JPM683)
+[**Start Building on Atlas Cloud**](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=nsfw-ai-skill)
 
 ---
 
@@ -1254,7 +1254,7 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ## Links
 
-- [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683) — API Provider
+- [Atlas Cloud](https://www.atlascloud.ai?ref=JPM683&utm_source=github&utm_campaign=nsfw-ai-skill) — API Provider
 - [Atlas Cloud Documentation](https://docs.atlascloud.ai) — Full API Docs
 - [Claude Code](https://claude.ai/code) — AI Coding Agent
 - [Hugging Face](https://huggingface.co) — LoRA Model Hub
